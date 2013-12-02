@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/cat_selector" 
+	android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="3dip">
+	<ImageView android:id="@+id/imgCatTitle"
+		android:layout_width="32dip" android:layout_height="32dip"
+		android:src="@drawable/default_header" android:scaleType="centerCrop" />
+	<TextView android:id="@+id/txtCatTitle" android:textColor="#FEDB07"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:layout_gravity="left|center_vertical" android:textSize="8pt"
+		android:layout_marginLeft="10dip" android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/mi_news_content_open_url" android:icon="@android:drawable/ic_menu_add"
+		android:title="Sitede Aç" />
+	<item android:id="@+id/mi_news_content_share_facebook" android:icon="@android:drawable/ic_menu_share"
+		android:title="Facebook'ta Paylaş" />
+</menu>

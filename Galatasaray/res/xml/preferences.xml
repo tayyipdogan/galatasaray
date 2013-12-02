@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="PrefNotifications"
+		android:title="Uyarılar">
+		<CheckBoxPreference android:key="GSPrefEnableNotifications"
+			android:title="Uyarıları Etkinleştir" android:defaultValue="true" />
+		<ListPreference android:title="Uyarı Kotrol Aralığı"
+			android:summary="Yeni yayınlanan haberlerin ne sıklıkla kontrol edileceği"
+			android:dependency="GSPrefEnableNotifications" android:key="GSPrefNotificationIntervals"
+			android:defaultValue="10" android:entries="@array/intervals"
+			android:entryValues="@array/interval_values"></ListPreference>
+		<RingtonePreference android:key="GSPrefNotificationTone"
+			android:dependency="GSPrefEnableNotifications" android:title="Uyarı Tonu"
+			android:ringtoneType="notification"></RingtonePreference>
+		<CheckBoxPreference android:key="GSPrefVibarateOnNotification"
+			android:title="Titreşim ile Uyarı" android:dependency="GSPrefEnableNotifications"
+			android:defaultValue="true"></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:key="GSPrefCategories"
+		android:title="Kategoriler" android:summary="Hangi haber kategorileri için uyarı yapılacağı">
+		<CheckBoxPreference android:key="GSPrefCategories_1"
+			android:defaultValue="true" android:title="Kulüp Haberleri"
+			android:dependency="GSPrefEnableNotifications"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_2"
+			android:defaultValue="true" android:title="Futbol Haberleri"
+			android:dependency="GSPrefEnableNotifications"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_3"
+			android:defaultValue="true" android:dependency="GSPrefEnableNotifications"
+			android:title="Basketbol Haberleri"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_4"
+			android:defaultValue="true" android:dependency="GSPrefEnableNotifications"
+			android:title="Voleybol Haberleri"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_5"
+			android:defaultValue="true" android:dependency="GSPrefEnableNotifications"
+			android:title="Su Sporu Haberleri"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_6"
+			android:defaultValue="true" android:dependency="GSPrefEnableNotifications"
+			android:title="Amatör Şube Haberleri"></CheckBoxPreference>
+		<CheckBoxPreference android:key="GSPrefCategories_7"
+			android:defaultValue="true" android:dependency="GSPrefEnableNotifications"
+			android:title="Diğer Kategori Haberleri"></CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:padding="3dip"  android:background="@drawable/news_img_selector" >
+	<ImageView android:id="@+id/imgNewsTitle"
+		android:layout_width="75dip" android:layout_height="50dip"
+		android:src="@drawable/default_header" android:scaleType="centerCrop" />
+	<TableLayout android:layout_height="wrap_content" android:background="@android:color/transparent"
+		android:layout_width="fill_parent" android:shrinkColumns="*">
+		<TableRow>
+			<TextView android:id="@+id/txtNewsTitle" android:textColor="#9B2F22"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_gravity="left|center_vertical"
+				android:textSize="6pt" android:layout_marginLeft="10dip"
+				android:textStyle="bold" />
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/txtNewsDate" android:textColor="#9B2F22"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_gravity="left|bottom" android:textSize="6pt"
+				android:layout_marginLeft="10dip" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
